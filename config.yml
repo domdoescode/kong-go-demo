@@ -1,0 +1,12 @@
+# go.yml
+_format_version: "1.1"
+services:
+  - url: https://reqres.in/api/users?page=2
+    routes:
+      - paths:
+          - "/"
+    plugins:
+      - name: go-demo
+        config:
+          path: dave
+          reopen: false
